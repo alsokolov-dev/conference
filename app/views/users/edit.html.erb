@@ -1,0 +1,56 @@
+<% provide(:title, "Edit user") %>
+<h1>Update your profile</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@user) do |f| %>
+        <%= render 'shared/error_messages' %>
+
+        <%= f.label :first_name %>
+        <%= f.text_field :first_name, class: 'form-control' %>
+
+        <%= f.label :last_name %>
+        <%= f.text_field :last_name, class: 'form-control' %>
+
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control' %>
+
+        <%= f.label :organization_name %>
+        <%= f.text_field :organization_name, class: 'form-control' %>
+
+        <%= f.label :department %>
+        <%= f.text_field :department, class: 'form-control' %>
+
+        <%= f.label :position %>
+        <%= f.text_field :position, class: 'form-control' %>
+
+        <%= f.label :area_of_interest %>
+        <%= f.text_area :area_of_interest, class: 'form-control' %>
+
+        <%= f.label :presentation %>
+        <%= f.select :presentation, ['oral', 'poster'], class: 'form-control' %>
+
+        <%= f.label :abstract %>
+        <%= f.text_area :abstract, class: 'form-control' %>
+
+        <%= f.label :visa_sponsorship %>
+        <%= f.select :visa_sponsorship, ['yes', 'no'], class: 'form-control' %>
+
+        <%= f.label :hotel %>
+        <%= f.select :hotel, ['yes', 'no'], class: 'form-control' %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control' %>
+
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+        <%= f.submit "Save changes", class: "btn btn-primary" %>
+    <% end %>
+
+    <div class="gravatar_edit">
+      <%= gravatar_for @user %>
+      <a href="http://gravatar.com/emails" target="_blank">change</a>
+    </div>
+  </div>
+</div>
