@@ -1,0 +1,10 @@
+<h1>Bioinformatics 2016</h1>
+
+<p>Hi <%= "#{@user.first_name} #{@user.last_name}" %>,</p>
+
+<p>
+  Welcome to the Bioinformatics 2016! Click on the link below to activate your account:
+</p>
+
+<%= link_to "Activate", edit_account_activation_path(@user.activation_token,
+                                                    email: @user.email) %>
