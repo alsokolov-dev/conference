@@ -14,6 +14,7 @@ class User < ActiveRecord::Base
   validates :department, presence: true
   validates :position, presence: true
   validates :presentation, presence: true
+  validates :presentation_name, presence: true
   validates :abstract, presence: true
   has_secure_password
   validates :password, presence: true, length: {minimum: 6}, allow_nil: true

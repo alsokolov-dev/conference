@@ -22,9 +22,10 @@ ActiveRecord::Schema.define(version: 20160207113529) do
     t.string   "position"
     t.text     "area_of_interest"
     t.string   "presentation"
+    t.string   "presentation_name"
     t.text     "abstract"
-    t.boolean  "visa_sponsorship"
-    t.boolean  "hotel"
+    t.string   "visa_sponsorship"
+    t.string   "hotel"
     t.datetime "created_at",                        null: false
     t.datetime "updated_at",                        null: false
     t.string   "password_digest"

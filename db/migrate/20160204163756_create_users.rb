@@ -9,9 +9,10 @@ class CreateUsers < ActiveRecord::Migration
       t.string :position
       t.text :area_of_interest
       t.string :presentation
+      t.string :presentation_name
       t.text :abstract
-      t.boolean :visa_sponsorship
-      t.boolean :hotel
+      t.string :visa_sponsorship
+      t.string :hotel
 
       t.timestamps null: false
     end
