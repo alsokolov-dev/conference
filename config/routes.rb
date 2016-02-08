@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get 'conference/home'
   get 'conference/registration'
   get 'conference/program'
+  get 'conference/key_dates'
+  get 'conference/organizing_committee'
 
   resources :users
   resources :account_activations, only: [:edit]
