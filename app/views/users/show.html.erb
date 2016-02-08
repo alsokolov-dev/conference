@@ -5,9 +5,12 @@
       <h1>
         <%= gravatar_for @user %>
         <%= "#{@user.first_name} #{@user.last_name}" %>
-        <%= @user.presentation_name %>
-        <%= @user.organization_name %>
-        <%= @user.department %>
+        </br>
+        <h2>
+          <%= @user.presentation_name %> <br>
+          <%= @user.organization_name %><br>
+          <%= @user.department %>
+        </h2>
       </h1>
     </section>
   </aside>
