@@ -7,6 +7,9 @@ $gray-medium-light: #eaeaea;
 
 /* universal */
 
+.center, .jumbotron {
+  background-image: image-url("moscow3_1.jpg")
+}
 .img-circle {
   position: absolute;
   margin: auto;
@@ -54,7 +57,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: #4d1900;
 }
 
 p {
