@@ -5,6 +5,9 @@
       <h1>
         <%= gravatar_for @user %>
         <%= "#{@user.first_name} #{@user.last_name}" %>
+        <%= @user.presentation_name %>
+        <%= @user.organization_name %>
+        <%= @user.department %>
       </h1>
     </section>
   </aside>
