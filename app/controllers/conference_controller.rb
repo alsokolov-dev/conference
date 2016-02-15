@@ -13,4 +13,7 @@ class ConferenceController < ApplicationController
 
   def organizing_committee
   end
+
+  def school
+  end
 end
