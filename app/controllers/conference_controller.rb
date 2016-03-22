@@ -16,4 +16,7 @@ class ConferenceController < ApplicationController
 
   def school
   end
+
+  def fees
+  end
 end

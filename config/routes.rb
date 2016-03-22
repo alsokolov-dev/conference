@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'conference/key_dates'
   get 'conference/organizing_committee'
   get 'conference/school'
+  get 'conference/fees'
 
   resources :users
   resources :account_activations, only: [:edit]
