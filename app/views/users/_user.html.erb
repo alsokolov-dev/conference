@@ -4,6 +4,11 @@
   <% if current_user.admin? && !current_user?(user) %>
       | <%= link_to "delete", user, method: :delete,
                     data: { confirm: "You sure?" } %>
+
+      <h2><%= user.presentation_name %></h2>
+      <h2><%= user.abstract %></h2>
+      <h2><%= user.visa_sponsorship %></h2>
+      <h2><%= user.hotel %></h2>
   <% end %>
   <h2><%= user.organization_name %></h2>
 </li>
