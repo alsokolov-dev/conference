@@ -1,11 +1,20 @@
 Rails.application.routes.draw do
   get 'password_resets/new'
-
   get 'password_resets/edit'
+
+  get 'password_student_resets/new'
+  get 'password_student_resets/edit'
+
 
   get    'login'   => 'sessions#new'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
+
+  get    'login'   => 'sessions_student#new'
+  post   'login'   => 'sessions_student#create'
+  delete 'logout'  => 'sessions_student#destroy'
+
+
   get 'users/new'
   get 'conference/home'
   get 'conference/registration'
@@ -18,6 +27,10 @@ Rails.application.routes.draw do
   resources :users
   resources :account_activations, only: [:edit]
   resources :password_resets,     only: [:new, :create, :edit, :update]
+
+  resources :students
+  resources :account_student_activations, only: [:edit]
+  resources :password_student_resets,     only: [:new, :create, :edit, :update]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
