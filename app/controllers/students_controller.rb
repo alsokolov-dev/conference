@@ -17,8 +17,8 @@ class StudentsController < ApplicationController
   def create
     @student = Student.new(student_params)
     if @student.save
-      @student.send_activation_email
-      flash[:info] = "Please check your email to activate your account."
+      #@student.send_activation_email
+      flash[:info] = "Thank you for registration."
       redirect_to root_url
     else
       render 'new'
