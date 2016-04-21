@@ -1,6 +1,7 @@
 <% provide(:title, 'Students') %>
 <h1>Students</h1>
 
-<ul>
-  <li>one</li>
-</ul>
+<% @students.each do |s|%>
+    <p><%= "#{s.first_name} #{s.last_name}" %></p>
+    <p><%= "#{s.email} #{s.affiliation}" %></p>
+<% end %>
