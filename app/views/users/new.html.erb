@@ -27,15 +27,6 @@
         <%= f.label :area_of_interest %>
         <%= f.text_area :area_of_interest, class: 'form-control' %>
 
-        <%= f.label :presentation, 'Type of presentation (optional)' %>
-        <%= f.select :presentation, ['oral', 'poster', 'none'], class: 'form-control' %>
-
-        <%= f.label :presentation_name, 'Title of your presentation (optional)' %>
-        <%= f.text_field :presentation_name, class: 'form-control' %>
-
-        <%= f.label :abstract, 'Abstract (optional), 1 page of text without images' %>
-        <%= f.text_area :abstract, class: 'form-control' %>
-
         <%= f.label :hotel, 'Need hotel?' %>
         <%= f.select :hotel, ['yes', 'no'], class: 'form-control' %>
 
